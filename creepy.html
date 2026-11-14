@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Creepy Page</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+        </style>
+</head>
+<body>
+    <h1>Welcome to the Creepy Page</h1>
+    <p>This is a story about how i was playing hide and seek when my friend disappeared.</p>
+    <p>I have to go find my friend.</p>
+    <button onclick="godark()">get in a mood</button>
+    <div class="textentry">Type your name here if you dare: <input type="text" id="nameInput"></div>
+    <button onclick="TypeandScream()">please dont click me</button>
+    <button onclick="finishTheStory()">Tell me what happened !</button>
+    <script>
+       function godark() {
+            document.body.style.backgroundColor = "white";
+            document.body.style.color = "black";
+        }
+
+        function TypeandScream() {
+           var personName = document.getElementById("nameInput").value;
+            if (personName) {
+                alert("I told you,not to do this " + personName + ", you have doomed us all!");
+            } else {
+                alert("You didn't enter your name! Are you brave enough to continue?");
+            } 
+        }
+        function finishTheStory() {
+            alert("As I searched for my friend, I heard a whisper calling my name. Suddenly, the lights went out and I felt a cold hand on my shoulder...");
+        } 
+    </script>
